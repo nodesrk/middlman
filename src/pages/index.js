@@ -7,10 +7,14 @@ import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
 
+import { WhatsAppWidget } from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
+
 export default function Home() {
   return (
     <>
       <Header />
+      <WhatsAppWidget phoneNumber="XXXXXXXXXX" />
       <main>
         {/* <VideoSection /> */}
         <ListSection />
