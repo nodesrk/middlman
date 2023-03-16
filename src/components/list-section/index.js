@@ -3,32 +3,32 @@ import Image from "next/image";
 
 const listItems = [
   {
-    title: `Designers`,
-    description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
-    excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
-    Deserunt nisi sit.`,
+    title: `Comprehensive candidate screening`,
+    description: `Conduct a thorough screening process to identify the most suitable candidates for the job. 
+    This can include skills assessments, behavioral interviews, and cultural fit evaluations to ensure that the candidate meets your specific requirements.`,
   },
   {
-    title: `Developers`,
-    description: `Pariatur consectetur laboris exercitation duis laboris.
-    Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
-    tempor tempor.`,
+    title: `Transparent communication`,
+    description: `Establish clear and consistent communication channels with your offshore team and ensure 
+    that everyone is on the same page regarding expectations, goals, and project timelines. 
+    This can help avoid misunderstandings and ensure that the project progresses smoothly.`,
   },
   {
-    title: `Product owners`,
-    description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
-    dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
-    Adipisicing.`,
+    title: `Ongoing support and management`,
+    description: `Provide ongoing support and management to your offshore team to 
+    ensure that they have the necessary resources, guidance, and training to succeed in their roles. 
+    This can include regular check-ins, feedback sessions, 
+    and training opportunities to help them grow and develop in their roles.`,
   },
 ];
 
 const ListSection = () => (
-  <section className={`lg:py-28 pt-28 overflow-hidden`}>
+  <section className={`overflow-hidden`}>
     <div className={`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`}>
       <div className={`mb-16 text-center`}>
         <h2 className={`text-base text-indigo-600 font-semibold tracking-wide uppercase`}>Grow your revenue</h2>
-        <p className={`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`}>
-          Transform your business
+        <p className={`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900 max-w-4xl mx-auto`}>
+          Experience hassle-free offshore hiring
         </p>
       </div>
       <div className={`flex flex-wrap -mx-8 items-center`}>

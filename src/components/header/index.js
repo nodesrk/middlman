@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 const Header = () => (
-  <header style={{backgroundColor: '#fff', minHeight: 'calc(100vh - 6rem'}}>
+  <header style={{backgroundColor: '#fff', marginBottom: '1rem'}}>
     <div className={`max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8`}>
       <h1 className={`font-sans font-bold text-4xl md:text-5xl lg:text-8xl text-center leading-snug text-gray-800`}>
         Outsourcing made easy, For your business needs.
@@ -20,7 +20,7 @@ const Header = () => (
         <Button>Contact us</Button>
       </div>
     </div>
-    <div className={`flex justify-center w-full`}>
+    {/* <div className={`flex justify-center w-full`}>
       <div className={`mt-4 w-full`}>
         <p className={`font-mono uppercase text-center font-medium text-sm text-gray-600`}>These folks get it</p>
         <div className={`flex items-center justify-center mx-auto flex-wrap`}>
@@ -30,7 +30,7 @@ const Header = () => (
           <Image src="/constants/svg/figma.svg" alt='figma' className={`m-12 mb-8`} width={120} height={120}/>
         </div>
       </div>
-    </div>
+    </div> */}
   </header>
 );
 

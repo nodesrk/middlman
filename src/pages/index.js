@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <VideoSection />
+        {/* <VideoSection /> */}
         <ListSection />
         <FeatureSection />
         <CasesSection />
