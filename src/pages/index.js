@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <WhatsAppWidget phoneNumber="XXXXXXXXXX" />
+      <WhatsAppWidget phoneNumber="+9779841452888" />
       <main>
         {/* <VideoSection /> */}
         <ListSection />

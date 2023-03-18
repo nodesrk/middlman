@@ -131,7 +131,7 @@ const Navigation = () => {
           <div className={`hidden md:block`}>
             <div className={`ml-4 flex items-center md:ml-6 mt-1`}>
               <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
+              {/* <Button modifier="border-0 mr-2">Log in</Button> */}
               <Button primary>Get started</Button>
             </div>
           </div>

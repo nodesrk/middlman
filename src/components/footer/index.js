@@ -19,8 +19,8 @@ const Footer = () => (
   <footer className={`bg-white border-t border-gray-400 pt-14 pb-16`}>
     <div className={`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`}>
       <div className={`mb-14 flex items-center w-full`}>
-        <Image className={`mr-4`} src="logo.svg" alt="logo" width={48} height={48} />
-        <p className={`text-4xl text-indigo-500 font-bold`}>STARTD</p>
+        <Image className={`mr-4`} src="logo.svg" alt="logo" width={300} height={300} />
+        <p className={`text-4xl text-indigo-500 font-bold`}></p>
       </div>
       <div className={`w-full lg:w-1/2`}>
         <ul className={`text-lg font-light flex flex-wrap w-full`}>
