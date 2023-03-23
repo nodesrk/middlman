@@ -61,7 +61,7 @@ const articles = [
 ];
 
 const CasesSection = () => (
-  <section>
+  <section id="Blog">
     <div className={`w-full min-h-screen bg-gray-900 relative`}>
       <div className={`absolute left-0 top-0 h-screen w-full overflow-hidden`} />
       <div className={`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`}>

@@ -1,5 +1,5 @@
 import Button from '../button';
-import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -17,7 +17,9 @@ const Header = () => (
       <div className={`mt-10 flex justify-center items-center w-full mx-auto`}>
         <Button primary>Get started</Button>
         <span className={`mx-2`}>or</span>
-        <Button>Contact us</Button>
+        <Link href='/contact'>
+          <Button>Contact us</Button>
+        </Link>
       </div>
     </div>
     {/* <div className={`flex justify-center w-full`}>

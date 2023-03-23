@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from '../button';
 import Image
  from 'next/image';
+import Link from 'next/link';
 
 
 const links = [
@@ -13,10 +14,10 @@ const links = [
     label: `Testimonials`,
     href: `/`,
   },
-  {
-    label: `Pricing`,
-    href: `/`,
-  },
+  // {
+  //   label: `Pricing`,
+  //   href: `/`,
+  // },
   {
     label: `Blog`,
     href: `/`,
@@ -81,7 +82,7 @@ const MobileMenu = () => (
   <div className={`md:hidden`}>
     <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3`}>
       {links.map((link) => (
-        <a href={link.href} className={`text-gray-500 block px-3 py-2 text-base font-medium`} key={link.label}>
+        <a href={`#${link.label}`} className={`text-gray-500 block px-3 py-2 text-base font-medium`} key={link.label}>
           {link.label}
         </a>
       ))}
@@ -91,7 +92,7 @@ const MobileMenu = () => (
         {secondaryLinks.map((link) => (
           <a
             key={`mobile-${link.label}`}
-            href={link.href}
+            href={`#${link.label}`}
             className={`block px-3 py-2 text-base font-medium text-gray-500`}
           >
             {link.label}
@@ -111,15 +112,15 @@ const Navigation = () => {
       <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}>
         <div className={`flex items-center justify-between h-24`}>
           <div className={`flex items-center`}>
-            <div className={`flex-shrink-0`}>
+            <Link href="/" className={`flex-shrink-0`}>
               <Image src="logo.svg" alt="logo" width={190} height={190} />
-            </div>
+            </Link>
             <div className={`hidden md:block`}>
               <div className={`ml-10 flex items-baseline space-x-4 mt-1`}>
                 {links.map((link) => (
                   <a
                     key={link.label}
-                    href={link.href}
+                    href={`#${link.label}`}
                     className={`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`}
                   >
                     {link.label}
@@ -130,7 +131,9 @@ const Navigation = () => {
           </div>
           <div className={`hidden md:block`}>
             <div className={`ml-4 flex items-center md:ml-6 mt-1`}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
+              <Link href="/contact">
+                <Button modifier="border-0 mr-2">Contact sales</Button>
+              </Link>
               {/* <Button modifier="border-0 mr-2">Log in</Button> */}
               <Button primary>Get started</Button>
             </div>

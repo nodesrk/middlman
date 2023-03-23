@@ -6,6 +6,7 @@ import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import PricingTable from '@/components/pricing-table';
 import Footer from '@/components/footer';
+import Review from '@/components/review';
 
 import { WhatsAppWidget } from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
@@ -21,6 +22,7 @@ export default function Home() {
         <FeatureSection />
         <CasesSection />
         <SocialProof />
+        <Review />
         <PricingTable />
       </main>
       <Footer />
