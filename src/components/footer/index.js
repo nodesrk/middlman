@@ -2,21 +2,18 @@ import Button from "../button";
 import Image from "next/image";
 
 const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
-const aboutLinks = [`About Us`, `Careers`, `Leadership`, `Blog`, `Events`, `Press`];
-const resourceLinks = [
+const aboutLinks = [`About Us`, `Careers` , `Events`, 'Instagram', 'Twitter', 'Facebook'];
+const resourceLinks = [ 
   `Get started`,
   `Guides`,
   `Tools`,
-  `Case studies`,
   `Solutions`,
   `FAQs`,
-  `Help Center`,
-  `Training`,
-  `Other resources`,
+  `Help Center`
 ];
 
 const Footer = () => (
-  <footer className={`bg-white border-t border-gray-400 pt-14 pb-16`}>
+<footer className={`bg-white border-t border-gray-400 pt-14 pb-16`}>
     <div className={`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`}>
       <div className={`mb-14 flex items-center w-full`}>
         <Image className={`mr-4`} src="logo.svg" alt="logo" width={300} height={300} />

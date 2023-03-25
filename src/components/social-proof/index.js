@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const socialProofs = [
   {
-    name: `John Doe`,
-    company: `Alphabet Inc.`,
+    name: `Sunab R.`,
+    company: `Middlman LLC`,
     image: `/images/social-1.webp`,
     text: `Commodo Lorem consequat ea consectetur pariatur proident excepteur.
     Pariatur eiusmod minim minim ipsum tempor aute excepteur minim eu nisi laboris.

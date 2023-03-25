@@ -10,10 +10,6 @@ const links = [
     label: `Features`,
     href: `/`,
   },
-  {
-    label: `Testimonials`,
-    href: `/`,
-  },
   // {
   //   label: `Pricing`,
   //   href: `/`,

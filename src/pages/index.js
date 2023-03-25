@@ -20,9 +20,9 @@ export default function Home() {
         {/* <VideoSection /> */}
         <ListSection />
         <FeatureSection />
-        <CasesSection />
-        <SocialProof />
-        <Review />
+        {/* <CasesSection /> */}
+        {/* <SocialProof /> */}
+        {/* <Review /> */}
         <PricingTable />
       </main>
       <Footer />
