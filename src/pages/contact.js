@@ -1,6 +1,47 @@
+import { validContact } from "@/utils/validation"
+import { useState } from "react"
+import toast from 'react-hot-toast'
 
 
 const Contact = () => {
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+
+  const initState = {
+    name: '',
+    email: '',
+    message: ''
+  }
+
+  const [ contact, setContact ] = useState(initState)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setContact({...contact, [name]: value })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const check = validContact(contact);
+    if(check.errLength !== 0) {
+      return toast.error(check.errMsg);
+    }
+
+    const data = await fetch(`${baseUrl}/api/contact`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(contact)
+    })
+    .then(res => res.json())
+    .then(res => toast.success(res.msg))
+    .catch(err => toast.error(err.err))
+
+    return data;
+  }
+
   return (
     <section className="overflow-hidden py-6">
       <div className="sm:px-16 px-6">
@@ -17,7 +58,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-black">
                 We will get back to you ASAP via email.
               </p>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -29,6 +70,8 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="name" value={contact.name}
+                        onChange={handleChange}
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-black py-3 px-6 text-base text-black shadow-one outline-none focus-visible:shadow-none"
                       />
@@ -44,6 +87,8 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        name="email" value={contact.email}
+                        onChange={handleChange}
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-black py-3 px-6 text-base text-black shadow-one outline-none focus-visible:shadow-none"
                       />
@@ -59,6 +104,8 @@ const Contact = () => {
                       </label>
                       <textarea
                         name="message"
+                        value={contact.message}
+                        onChange={handleChange}
                         rows="5"
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-black py-3 px-6 text-base text-body-color shadow-one outline-none focus-visible:shadow-none"
@@ -66,7 +113,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-md bg-black py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+                    <button type="submit" className="rounded-md bg-black py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
                       Submit
                     </button>
                   </div>

@@ -29,8 +29,8 @@ const Footer = () => (
               <h4 className={`text-gray-900 text-base font-bold mb-1`}>Product</h4>
               <ul>
                 {productLinks.map((link) => (
-                  <li className={`text-gray-800 text-sm font-medium leading-6`} key={link}>
-                    <a href="/">{link}</a>
+                  <li className={`text-gray-800 text-sm font-medium leading-6 cursor-pointer`} key={link}>
+                    <p>{link}</p>
                   </li>
                 ))}
               </ul>
@@ -42,7 +42,7 @@ const Footer = () => (
               <ul>
                 {resourceLinks.map((link) => (
                   <li className={`text-gray-800 text-sm font-medium leading-6`} key={link}>
-                    <a href="/">{link}</a>
+                    <p>{link}</p>
                   </li>
                 ))}
               </ul>
@@ -54,7 +54,7 @@ const Footer = () => (
               <ul>
                 {aboutLinks.map((link) => (
                   <li className={`text-gray-800 text-sm font-medium leading-6`} key={link}>
-                    <a href="/">{link}</a>
+                    <p>{link}</p>
                   </li>
                 ))}
               </ul>

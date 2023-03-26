@@ -11,7 +11,7 @@ const Header = () => (
       </h1>
       <div className={`max-w-xl mx-auto`}>
         <p className={`mt-10 text-gray-500 text-center text-xl lg:text-3xl`}>
-        Streamline your business with Middlman's outsourcing arbitrage.
+        Streamline your business with Middlman&apos;s outsourcing arbitrage.
         </p>
       </div>
       <div className={`mt-10 flex justify-center items-center w-full mx-auto`}>

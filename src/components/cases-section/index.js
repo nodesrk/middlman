@@ -100,7 +100,7 @@ const CasesSection = () => (
               }
             >
               See all case studies
-              <Image src="/constants/svg/arrow.svg" width={20} height={20} className={`fill-current ml-2`} />
+              <Image src="/constants/svg/arrow.svg" alt="Arrow Icon" width={20} height={20} className={`fill-current ml-2`} />
             </span>
           </div>
         </div>

@@ -10,7 +10,7 @@ const PlayButton = () => (
     }
     aria-label="play video"
   >
-    <Image src="/constants/svg/play.svg" width={20} height={20} className={`fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0`} />
+    <Image src="/constants/svg/play.svg" alt='Play button Icon' width={20} height={20} className={`fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0`} />
     <span className={`ml-3`}>Watch the video (5 min)</span>
   </button>
 );
@@ -21,7 +21,7 @@ const VideoSection = () => (
       <div className={`flex flex-col max-w-4xl mx-auto pt-28`}>
         <div className={`w-full`}>
           <div className={`relative shadow-2xl mx-6 lg:mx-0`}>
-            <Image src="/constants/svg/preferences.svg" width={1000} height={1000} />
+            <Image src="/constants/svg/preferences.svg" alt='Preferences' width={1000} height={1000} />
             <PlayButton />
           </div>
         </div>

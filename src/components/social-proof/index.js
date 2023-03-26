@@ -45,13 +45,13 @@ const SocialProof = () => {
           <section>
             <figure>
               <div className={`relative bg-white`}>
-                <Image src="/constants/svg/quote.svg" width={25} height={25} className={`w-16 md:w-12 left-0 md:-left-2 absolute top-0 pl-4 md:pl-0 text-gray-300`} />
+                <Image src="/constants/svg/quote.svg" alt='Double Quote Icon' width={25} height={25} className={`w-16 md:w-12 left-0 md:-left-2 absolute top-0 pl-4 md:pl-0 text-gray-300`} />
                 <div className={`pt-20 px-6 md:px-0`}>
                   <p className={`text-gray-600 text-base pb-6`}>{socialProofs[currentIndex].text}</p>
                   <div className={`flex items-center justify-between`}>
                     <div className={`flex items-center pb-12`}>
                       <div className={`h-12 w-12`}>
-                        <img
+                        <Image
                           src={socialProofs[currentIndex].image}
                           alt={socialProofs[currentIndex].name}
                           className={`h-full w-full object-cover overflow-hidden rounded-full`}

@@ -55,7 +55,7 @@ const ListSection = () => (
         </div>
         <div className={`w-full lg:w-1/2 px-8`}>
           <div className={`lg:mb-0 pb-12 lg:pb-0 mt-16 lg:mt-0 mx-6 lg:mx-0 w-[100%] h-[100%]`}>
-            <Image src="/constants/svg/features.svg" width={1000} height={1000} />
+            <Image src="/constants/svg/features.svg" alt="Illustrator of a man presenting features" width={1000} height={1000} />
           </div>
         </div>
       </div>

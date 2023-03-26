@@ -14,7 +14,7 @@ const FeatureSection = () => (
         <div className={`flex flex-wrap my-12`}>
           <div className={`w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8`}>
             <div className={`flex items-center mb-6`}>
-              <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
+              <Image src="/constants/svg/check.svg" alt="Check Icon" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
               <div className={`ml-4 text-xl`}>Access to a global talent pool</div>
             </div>
             <p className={`leading-loose text-gray-500`}>
@@ -24,7 +24,7 @@ const FeatureSection = () => (
           </div>
           <div className={`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8`}>
             <div className={`flex items-center mb-6`}>
-              <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
+              <Image src="/constants/svg/check.svg" alt="Check Icon" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
               <div className={`ml-4 text-xl`}>Reduced risk and hassle</div>
             </div>
             <p className={`leading-loose text-gray-500 `}>
@@ -34,7 +34,7 @@ const FeatureSection = () => (
           </div>
           <div className={`w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8`}>
             <div className="flex items-center mb-6">
-              <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
+              <Image src="/constants/svg/check.svg" alt="Check Icon" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
               <div className={`ml-4 text-xl`}>Expertise and support</div>
             </div>
             <p className={`leading-loose text-gray-500`}>
@@ -44,7 +44,7 @@ const FeatureSection = () => (
           </div>
           <div className={`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8`}>
             <div className={`flex items-center mb-6`}>
-              <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
+              <Image src="/constants/svg/check.svg" alt="Check Icon" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
               <div className={`ml-4 text-xl`}>Quality assurance</div>
             </div>
             <p className={`leading-loose text-gray-500`}>
@@ -54,7 +54,7 @@ const FeatureSection = () => (
           </div>
           <div className={`w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8`}>
             <div className={`flex items-center mb-6`}>
-              <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
+              <Image src="/constants/svg/check.svg" alt="Check Icon" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
               <div className={`ml-4 text-xl`}>Flexible engagement models</div>
             </div>
             <p className={`leading-loose text-gray-500`}>
@@ -64,7 +64,7 @@ const FeatureSection = () => (
           </div>
           <div className={`w-full md:w-1/2 lg:w-1/3 p-8`}>
             <div className={`flex items-center mb-6`}>
-              <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
+              <Image src="/constants/svg/check.svg" alt="Check Icon" width={20} height={20} className={`h-6 w-6 text-indigo-500 fill-current`} />
               <div className={`ml-4 text-xl`}>Competitive pricing</div>
             </div>
             <p className={`leading-loose text-gray-500`}>

@@ -38,7 +38,7 @@ const PricingTable = () => (
               {features.map((feature) => (
                 <li className={`flex items-center lg:col-span-1`} key={feature}>
                   <div className={`flex-shrink-0`}>
-                    <Image src="/constants/svg/check.svg" width={20} height={20} className={`h-8 w-8 mr-3 mb-1`} />
+                    <Image src="/constants/svg/check.svg" alt='Check Icon' width={20} height={20} className={`h-8 w-8 mr-3 mb-1`} />
                   </div>
                   <p className={`text-gray-600`}>{feature}</p>
                 </li>

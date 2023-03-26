@@ -11,9 +11,12 @@
   "dependencies": {
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
+    "mongoose": "^7.0.3",
     "next": "13.2.3",
+    "nodemailer": "^6.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
     "react-whatsapp-widget": "^2.2.0"
   },
   "devDependencies": {
