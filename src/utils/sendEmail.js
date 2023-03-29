@@ -6,7 +6,7 @@ const transporter = nodemailer.createTransport({
     service: 'zoho',
     auth: {
         user: process.env.MAIL_EMAIL,
-        pass: process.env.MAIL_PASSWORD
+        pass: process.env.MAIL_PASSWORD,
     }
 })
 
@@ -39,6 +39,7 @@ const sendMail = async (to, name, email, message) => {
                 </body>
             `
         })
+        return info;
     } catch (err) {
         console.log(err)
         return false;

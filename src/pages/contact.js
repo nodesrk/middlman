@@ -30,24 +30,24 @@ const Contact = () => {
 
     const toastId = toast.loading("Loading...")
     
-    const data = await fetch(`${baseUrl}/api/contact`, {
+    const res = await fetch(`${baseUrl}/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(contact)
     })
-    .then(res => res.json())
-    .then(res => {
-      toast.success(res.msg)
-      return toast.dismiss(toastId)
-    })
-    .catch(err => {
-      toast.error(err.err)
-      return toast.dismiss(toastId)
-    })
 
-    setContact(initState)
+    const data = await res.json()
+
+    if(data.err) {
+      toast.error(data.err)
+      return toast.dismiss(toastId)
+    } else {
+        toast.success(data.msg)
+        toast.dismiss(toastId)
+        setContact(initState)
+    }
   }
 
   return (

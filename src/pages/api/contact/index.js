@@ -32,7 +32,7 @@ const postContact = async (req,res) => {
 
         res.json({msg: "Sucessfully Submitted!"})
 
-        await sendMail('yotest195@gmail.com', name, email, message)
+        await sendMail('sunabranjitkar@gmail.com', name, email, message)
 
     } catch (err) {
         return res.status(500).json({err: err.message})

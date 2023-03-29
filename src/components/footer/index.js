@@ -17,7 +17,7 @@ const Footer = () => (
     <div className={`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`}>
       <div className={`mb-14 flex items-center w-full`}>
         <Image className={`mr-4`} src="logo.svg" alt="logo" width={300} height={300} />
-        <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="641342735a153ec4fec12a71" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="10" data-style-alignment="center">
+        <div className="trustpilot-widget" data-locale="en-US" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="641342735a153ec4fec12a71" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="10" data-style-alignment="center">
   <a href="https://www.trustpilot.com/review/middlman.com" target="_blank" rel="noopener">Review us on Trustpilot</a>
 </div>
         <p className={`text-4xl text-indigo-500 font-bold`}></p>
