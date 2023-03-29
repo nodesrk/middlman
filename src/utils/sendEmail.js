@@ -4,6 +4,8 @@ import nodemailer from 'nodemailer'
 
 const transporter = nodemailer.createTransport({
     service: 'zoho',
+    host: process.env.EMAIL_SERVER_HOST,
+    port: process.env.EMAIL_SERVER_PORT,
     auth: {
         user: process.env.MAIL_EMAIL,
         pass: process.env.MAIL_PASSWORD,
